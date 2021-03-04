@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.38aea67c.chunk.css",
+    "main.js": "/static/js/main.99688fab.chunk.js",
+    "main.js.map": "/static/js/main.99688fab.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cebca0aa.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cebca0aa.js.map",
+    "static/js/2.85e80784.chunk.js": "/static/js/2.85e80784.chunk.js",
+    "static/js/2.85e80784.chunk.js.map": "/static/js/2.85e80784.chunk.js.map",
+    "static/js/3.23705e6d.chunk.js": "/static/js/3.23705e6d.chunk.js",
+    "static/js/3.23705e6d.chunk.js.map": "/static/js/3.23705e6d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.38aea67c.chunk.css.map": "/static/css/main.38aea67c.chunk.css.map",
+    "static/js/2.85e80784.chunk.js.LICENSE.txt": "/static/js/2.85e80784.chunk.js.LICENSE.txt",
+    "static/js/pdf.worker.entry.ef99cc29.worker.js": "/static/js/pdf.worker.entry.ef99cc29.worker.js",
+    "static/js/pdf.worker.entry.ef99cc29.worker.js.LICENSE.txt": "/static/js/pdf.worker.entry.ef99cc29.worker.js.LICENSE.txt",
+    "static/js/pdf.worker.entry.ef99cc29.worker.js.map": "/static/js/pdf.worker.entry.ef99cc29.worker.js.map",
+    "static/media/AECAgra.b663baa3.webp": "/static/media/AECAgra.b663baa3.webp",
+    "static/media/AECAgraFull.84cbc1d7.webp": "/static/media/AECAgraFull.84cbc1d7.webp",
+    "static/media/CssLogo.f889f0d8.webp": "/static/media/CssLogo.f889f0d8.webp",
+    "static/media/Surya Prakash Pandey CV_edit2.b2ba31ac.pdf": "/static/media/Surya Prakash Pandey CV_edit2.b2ba31ac.pdf",
+    "static/media/cdac.1055aff8.jpeg": "/static/media/cdac.1055aff8.jpeg",
+    "static/media/cdacLogo.54874b0c.jpg": "/static/media/cdacLogo.54874b0c.jpg",
+    "static/media/hclConnectionsLogo.77662a8e.png": "/static/media/hclConnectionsLogo.77662a8e.png",
+    "static/media/htmlLogo.f61e377f.png": "/static/media/htmlLogo.f61e377f.png",
+    "static/media/js.81cb0fac.png": "/static/media/js.81cb0fac.png",
+    "static/media/jwtIcon.46f766eb.jpg": "/static/media/jwtIcon.46f766eb.jpg",
+    "static/media/node-js-icon.ac96a6c9.png": "/static/media/node-js-icon.ac96a6c9.png",
+    "static/media/oauthLogo.20863ba1.jpg": "/static/media/oauthLogo.20863ba1.jpg",
+    "static/media/profilePic.299c667a.jpg": "/static/media/profilePic.299c667a.jpg",
+    "static/media/reactIcon.20ec11c4.png": "/static/media/reactIcon.20ec11c4.png",
+    "static/media/upBoard.46c3eec1.png": "/static/media/upBoard.46c3eec1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cebca0aa.js",
+    "static/js/2.85e80784.chunk.js",
+    "static/css/main.38aea67c.chunk.css",
+    "static/js/main.99688fab.chunk.js"
+  ]
+}
