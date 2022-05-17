@@ -1,0 +1,21 @@
+.postList {
+    text-decoration: none;
+    color: #3E5151;
+}
+
+.postList:hover {
+    text-decoration: underline;
+}
+
+.GitProjectTab {
+    justify-content: space-evenly;
+    color: #3E5151;
+}
+
+.codeSnippet {
+    background-color: #3E5151 !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: #DECBA4 !important;
+}

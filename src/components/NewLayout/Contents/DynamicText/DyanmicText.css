@@ -1,0 +1,16 @@
+#cursor {
+    content: '_';
+    border-left: .1em solid #000;
+    animation: blink .7s steps(1) infinite;
+}
+
+.dynamicText{
+    color: #3498DB;
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+        border-radius: 50%;
+    }
+}

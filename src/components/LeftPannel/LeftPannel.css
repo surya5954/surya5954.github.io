@@ -1,0 +1,47 @@
+.SideDrawer {
+    position: fixed;
+    width: 22%;
+    max-width: 70%;
+    height: 100%;
+    top: 0;
+    z-index: 200;
+    background-color: #DECBA4;
+    /* padding: 32px 16px; */
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+    display: none;
+}
+
+.onload {
+    transition: 1s;
+    left: 0;
+}
+
+@media(min-width: 1000px) {
+    .SideDrawer {
+        display: block;
+    }
+}
+
+.Open {
+    transform: translateX(0%);
+}
+
+.Close {
+    transform: translateX(-100%);
+}
+
+.media {
+    height: 20%;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.media:hover {
+    transform: scale(1.05);
+}

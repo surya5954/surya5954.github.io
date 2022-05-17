@@ -1,0 +1,21 @@
+.transitionClass {
+    display: block;
+    -webkit-animation: slide-down .3s ease-out;
+    -moz-animation: slide-down .3s ease-out;
+}
+
+.container {
+    margin-top: 5px;
+    background-color: #3E5151;
+    height: 100vh;
+}
+
+@media(min-width: 1000px) {
+    .container {
+        /* flex-flow: row wrap; */
+        width: 80% !important;
+        margin: 10%;
+        position: relative;
+        /* right: 10%; */
+    }
+}

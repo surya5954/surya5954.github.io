@@ -1,0 +1,19 @@
+.RighPannel {
+    width: 100%;
+    left: 0;
+    position: relative;
+}
+
+@media(min-width: 1000px) {
+    .RighPannel {
+        width: 78%;
+        left: 22%;
+        position: absolute;
+        top: 0;
+    }
+}
+
+.section{
+    /* transition: all;*/
+    margin-top: 100px;
+}

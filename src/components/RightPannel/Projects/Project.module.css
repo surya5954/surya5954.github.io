@@ -1,0 +1,29 @@
+.ProjectCard {
+    display: none;
+    background-color: #3E5151;
+    margin-top: 50px;
+}
+
+@media(min-width: 1000px) {
+    .ProjectCard {
+        display: block;
+    }
+}
+
+.mobileProjectCard {
+    display: block;
+}
+
+@media(min-width: 1000px) {
+    .mobileProjectCard {
+        display: none;
+    }
+}
+
+.textColor {
+    color: #3E5151;
+}
+
+.textColor:hover {
+    color: #DECBA4;
+}
