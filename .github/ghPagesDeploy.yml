@@ -1,9 +1,6 @@
-name: Portfolio Github Pages Deploy
+name: Build and Deploy
 
-on:
-  push:
-    branches: 
-      - "master"
+on: [push]
 
 jobs:
   build-and-deploy:
