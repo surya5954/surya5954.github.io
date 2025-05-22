@@ -58,7 +58,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "react-query-devtools": "^2.6.3"
+    "gh-pages": "^4.0.0"
   }
 }
