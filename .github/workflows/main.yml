@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build-and-deploy:
-    runs-on: [ self-hosted ]
+    runs-on: ubuntu-latest # MODIFIED HERE
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
