@@ -1,6 +1,6 @@
 .postList {
     text-decoration: none;
-    color: #3E5151;
+    color: var(--primary-color);
 }
 
 .postList:hover {

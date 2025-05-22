@@ -7,7 +7,7 @@
     /* height: 80vh; */
     /* width: 100%; */
     /* text-align: center; */
-    color: #3E5151;
+    color: var(--text-color); /* MODIFIED HERE */
     /* background-color: #DECBA4; */
     /* background-color:  */
     margin: 2%;
@@ -44,14 +44,14 @@
 }
 
 .profileHeading {
-    color: #3E5151;
-    background-color: #DECBA4;
+    color: var(--header-text-color); /* MODIFIED HERE */
+    background-color: var(--header-background-color); /* MODIFIED HERE */
     padding: 10px;
 }
 
 .postList {
     text-decoration: none;
-    color: #3E5151;
+    color: var(--primary-color); /* MODIFIED HERE */
 }
 
 
@@ -64,7 +64,7 @@ div {
 
 .post {
     border-top: 2px dashed;
-    border-color: #3E5151 !important;
+    border-color: var(--primary-color) !important; /* MODIFIED HERE */
     margin: 0;
     padding: 30px;
     counter-increment: section;
@@ -80,9 +80,9 @@ div {
     padding: 10px;
     height: 20px;
     width: 20px;
-    background-color: #3E5151;
+    background-color: var(--primary-color); /* MODIFIED HERE */
     text-align: center;
-    color: white;
+    color: var(--header-text-color); /* MODIFIED HERE */
     font-size: 110%;
 }
 
@@ -95,10 +95,10 @@ div {
     padding: 10px;
     height: 20px;
     width: 20px;
-    background-color: #3E5151;
+    background-color: var(--primary-color); /* MODIFIED HERE */
     ;
     text-align: center;
-    color: white;
+    color: var(--header-text-color); /* MODIFIED HERE */
     font-size: 110%;
 }
 
@@ -136,4 +136,3 @@ div {
     padding: 10px;
     /* flex-direction: row-reverse; */
 }
-

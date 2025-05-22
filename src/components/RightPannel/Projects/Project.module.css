@@ -1,6 +1,6 @@
 .ProjectCard {
     display: none;
-    background-color: #3E5151;
+    background-color: var(--header-background-color);
     margin-top: 50px;
 }
 
