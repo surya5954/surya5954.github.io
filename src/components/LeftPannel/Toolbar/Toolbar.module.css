@@ -1,6 +1,6 @@
 .Toolbar {
     display: block;
-    background-color: #3E5151;
+    background-color: var(--header-background-color);
 }
 
 

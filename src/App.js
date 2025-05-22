@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 // import { ReactQueryDevtools } from 'react-query-devtools';
 import './App.css';
 import Layout from './components/NewLayout/Layout';
-
+import { ThemeProvider } from './contexts/ThemeContext'; // Import ThemeProvider
 
 
 const App = () => {
@@ -12,7 +12,9 @@ const App = () => {
   
     return (
         <QueryClientProvider client = {queryClient}>
+          <ThemeProvider> {/* Wrap Layout with ThemeProvider */}
              <Layout/>
+          </ThemeProvider>
       </QueryClientProvider>
     )
   

@@ -1,11 +1,11 @@
 #cursor {
     content: '_';
-    border-left: .1em solid #000;
+    border-left: .1em solid var(--text-color);
     animation: blink .7s steps(1) infinite;
 }
 
 .dynamicText{
-    color: #3498DB;
+    color: var(--primary-color);
 }
 
 @keyframes blink {

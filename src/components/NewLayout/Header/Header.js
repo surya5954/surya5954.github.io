@@ -3,6 +3,7 @@ import { Grid, Typography, Divider } from '@material-ui/core'
 import ProfilePicture from '../../../assets/images/newProfilePicNoBG.png';
 import { data, greetings } from '../../../DataStore/portfolioData'
 import DynamicText from '../Contents/DynamicText/DynamicText';
+import ThemeToggle from '../../UI/ThemeToggle'; // Import ThemeToggle
 
 
 const useStyles = makeStyles(({breakpoints, spacing}) => {
@@ -51,6 +52,7 @@ export const Header = () => {
 
     return (
         <div>
+            <ThemeToggle /> {/* Add ThemeToggle component */}
             <Grid container className={classes.root} flexFlow="column">
                 <Grid item>
                     {/* <Paper className= {classes.profilePic}> */}

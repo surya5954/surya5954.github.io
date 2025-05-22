@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #DECBA4;
+  background-color: var(--background-color);
 }
 
 .App-logo {
@@ -15,7 +15,7 @@
 }
 
 .main-layout{
-    background-color: '#DECBA4' !important;
+    background-color: var(--background-color) !important;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -30,7 +30,7 @@
 }
 
 .layout-background{
-    background-color: '#DECBA4';
+    background-color: var(--background-color);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -38,18 +38,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--header-background-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--header-text-color);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--primary-color);
 }
 
 @keyframes App-logo-spin {
