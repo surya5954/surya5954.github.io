@@ -16,7 +16,9 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest # MODIFIED HERE
+    runs-on: ubuntu-latest
+    permissions: # ADDED THIS BLOCK
+      contents: write # ADDED THIS LINE
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
@@ -29,7 +31,7 @@ jobs:
         run: |
           npm ci
           npm run build
-        env: # ADDED THIS SECTION
+        env: 
           NODE_OPTIONS: --openssl-legacy-provider
 
       - name: Deploy 🚀
@@ -37,5 +39,5 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
-          token: ${{ secrets.MY_TOKEN }}
-          clean: true # ADDED THIS LINE
+          token: ${{ secrets.GITHUB_TOKEN }} # MODIFIED THIS LINE
+          clean: true 
