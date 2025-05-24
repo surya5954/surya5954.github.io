@@ -39,3 +39,5 @@ jobs:
           folder: build # The folder the action should deploy.
           token: ${{ secrets.MY_TOKEN }}
           clean: true # ADDED THIS LINE
+          git-config-username: github-actions[bot] # ADDED THIS LINE
+          git-config-email: 41898282+github-actions[bot]@users.noreply.github.com # ADDED THIS LINE
