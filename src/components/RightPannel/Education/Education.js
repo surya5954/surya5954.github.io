@@ -1,6 +1,4 @@
-import React, { useContext } from 'react'; // Import useContext
-import Card from '@material-ui/core/Card';
-// CardMedia import removed as it's unused
+import React from 'react'; // Removed useContext as theme string isn't directly used now
 import Avatar from '@material-ui/core/Avatar';
 import CardHeader from '@material-ui/core/CardHeader';
 import Typography from '@material-ui/core/Typography';
@@ -12,15 +10,15 @@ import classModule from './Education.module.css';
 import Slide from '@material-ui/core/Slide';
 import PaperTransition from '../../Animations/PaperTransition';
 import { educationData } from '../../../DataStore/portfolioData';
-import { ThemeContext } from '../../../contexts/ThemeContext'; // Import our ThemeContext
+// ThemeContext import removed as theme string isn't directly used for these styles
 
 const useStyles = makeStyles((muiTheme) => ({ // muiTheme is Material-UI's own theme object
-    root: (props) => ({ // Function to accept props, where we'll pass our theme string
+    root: { // This style is applied to the div inside PaperTransition
         maxWidth: 400,
         minHeight: 200,
-        // Use our theme string from props to conditionally set background
-        backgroundColor: props.theme === 'light' ? '#DECBA4' : '#282c34', 
-    }),
+        backgroundColor: 'var(--card-background-color)', // Use new CSS variable
+        color: 'var(--card-text-color)', // Set default text color for the card content
+    },
     media: {
         height: 0,
         paddingTop: '56.25%', // 16:9
@@ -35,8 +33,7 @@ const useStyles = makeStyles((muiTheme) => ({ // muiTheme is Material-UI's own t
 }));
 
 const Education = () => {
-    const { theme } = useContext(ThemeContext); // Get our theme ('light' or 'dark')
-    const classes = useStyles({ theme }); // Pass our theme string as a prop to useStyles
+    const classes = useStyles(); // No need to pass theme as prop if styles use CSS vars
    
     const checked = true;
     return (
@@ -45,20 +42,22 @@ const Education = () => {
             {educationData.map((item) => (
                 <Slide key={item.college} direction={item.transition} in={checked} mountOnEnter unmountOnExit>
                     <Grid item xs={10} sm={5} className={classes.item} >
-                        {/* Conditionally set color prop for PaperTransition */}
-                        <PaperTransition color={theme === 'light' ? '#DECBA4' : '#282c34'}>
+                        {/* PaperTransition color prop now uses CSS variable string */}
+                        <PaperTransition color={'var(--card-background-color)'}>
                             <div className={classes.root}>
                                 <CardHeader
                                     avatar={
                                         <Avatar alt={item.university} src={item.logo} />
                                     }
+                                    // Explicitly style title and subheader to use card text color
+                                    titleTypographyProps={{ style: { color: 'var(--card-text-color)' } }}
+                                    subheaderTypographyProps={{ style: { color: 'var(--card-text-color)' } }}
                                     title={item.course + " (" + item.stream + ")"}
                                     subheader={item.college}
-
                                 />
                                 <CardContent>
-                                    {/* Use style prop to apply CSS variable for text color */}
-                                    <Typography variant="body2" style={{ color: 'var(--text-color)' }} component="p">
+                                    {/* Typography now uses --card-text-color */}
+                                    <Typography variant="body2" style={{ color: 'var(--card-text-color)' }} component="p">
                                         {item.highlights}
                                     </Typography>
                                 </CardContent>
