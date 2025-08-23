@@ -33,7 +33,6 @@ body[data-theme='dark'] {
   --primary-color: #BB86FC; /* A common purple for dark mode accents */
   --header-background-color: #1E1E1E; /* Slightly lighter than main dark background */
   --header-text-color: #FFFFFF;
-  --dark-mode-active: true; /* Dummy variable for testing */
 
   background-color: var(--background-color);
   color: var(--text-color);
