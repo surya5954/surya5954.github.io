@@ -16,6 +16,7 @@ import {
 } from '@mui/lab';
 import { styled } from '@mui/material/styles';
 import SchoolIcon from '@mui/icons-material/School';
+import { useThemeMode } from '../contexts/ThemeContext';
 import { educationData } from '../data/portfolioData';
 
 const StyledTimelineContent = styled(TimelineContent)(({ theme }) => ({
@@ -23,9 +24,23 @@ const StyledTimelineContent = styled(TimelineContent)(({ theme }) => ({
     px: 2,
 }));
 
+const StyledTimelineConnector = styled(TimelineConnector)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#404040' : theme.palette.grey[300],
+}));
+
+const StyledTimelineDot = styled(TimelineDot)(({ theme }) => ({
+    borderColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.mode === 'dark' ? '#1e1e1e' : theme.palette.background.paper,
+}));
+
 const Education = () => {
+    const { isDarkMode } = useThemeMode();
+    
     return (
-        <Box id="education" sx={{ py: 8, backgroundColor: '#ffffff' }}>
+        <Box id="education" sx={{ 
+            py: 8, 
+            backgroundColor: isDarkMode ? '#121212' : '#ffffff' 
+        }}>
             <Container>
                 <Typography variant="h3" align="center" gutterBottom>
                     Education
@@ -48,11 +63,11 @@ const Education = () => {
                                 </Typography>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
-                                <TimelineConnector />
-                                <TimelineDot color="primary" variant="outlined">
+                                <StyledTimelineConnector />
+                                <StyledTimelineDot color="primary" variant="outlined">
                                     <SchoolIcon />
-                                </TimelineDot>
-                                <TimelineConnector />
+                                </StyledTimelineDot>
+                                <StyledTimelineConnector />
                             </TimelineSeparator>
                             <StyledTimelineContent>
                                 <Paper elevation={3} sx={{ p: 3 }}>

@@ -9,6 +9,7 @@ import {
     Avatar
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import ThemeToggle from './ThemeToggle';
 import { data, greetings } from '../data/portfolioData';
 
 const HeroSection = styled(Box)(({ theme }) => ({
@@ -55,6 +56,7 @@ const Header = () => {
                     <Button color="inherit" onClick={() => scrollToSection('contact')}>
                         Contact
                     </Button>
+                    <ThemeToggle />
                 </Toolbar>
             </AppBar>
             

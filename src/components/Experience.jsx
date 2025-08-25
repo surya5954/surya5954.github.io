@@ -17,11 +17,17 @@ import {
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LinkIcon from '@mui/icons-material/Link';
+import { useThemeMode } from '../contexts/ThemeContext';
 import { projectDetails } from '../data/portfolioData';
 
 const Experience = () => {
+    const { isDarkMode } = useThemeMode();
+    
     return (
-        <Box id="experience" sx={{ py: 8, backgroundColor: '#f8f9fa' }}>
+        <Box id="experience" sx={{ 
+            py: 8, 
+            backgroundColor: isDarkMode ? '#1a1a1a' : '#f8f9fa' 
+        }}>
             <Container>
                 <Typography variant="h3" align="center" gutterBottom>
                     Professional Experience

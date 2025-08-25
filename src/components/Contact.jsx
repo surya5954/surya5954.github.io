@@ -16,6 +16,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArticleIcon from '@mui/icons-material/Article';
+import { useThemeMode } from '../contexts/ThemeContext';
 import { socialMedia } from '../data/portfolioData';
 
 const ContactCard = styled(Card)(({ theme }) => ({
@@ -38,6 +39,8 @@ const SocialIconButton = styled(IconButton)(({ theme }) => ({
 }));
 
 const Contact = () => {
+    const { isDarkMode } = useThemeMode();
+    
     const getSocialIcon = (id) => {
         const iconProps = { fontSize: 'large' };
         switch (id) {
@@ -78,7 +81,10 @@ const Contact = () => {
     };
 
     return (
-        <Box id="contact" sx={{ py: 8, backgroundColor: '#f8f9fa' }}>
+        <Box id="contact" sx={{ 
+            py: 8, 
+            backgroundColor: isDarkMode ? '#1a1a1a' : '#f8f9fa' 
+        }}>
             <Container>
                 <Typography variant="h3" align="center" gutterBottom>
                     Get In Touch

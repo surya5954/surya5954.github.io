@@ -14,6 +14,7 @@ import {
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ArticleIcon from '@mui/icons-material/Article';
+import { useThemeMode } from '../contexts/ThemeContext';
 import { useMediumPostData } from '../services/mediumService';
 
 const BlogCard = styled(Card)(({ theme }) => ({
@@ -27,6 +28,7 @@ const BlogCard = styled(Card)(({ theme }) => ({
 }));
 
 const Blog = () => {
+    const { isDarkMode } = useThemeMode();
     const { data: mediumData, isLoading, error } = useMediumPostData();
 
     const formatDate = (dateString) => {
@@ -49,7 +51,10 @@ const Blog = () => {
     };
 
     return (
-        <Box id="blog" sx={{ py: 8, backgroundColor: '#ffffff' }}>
+        <Box id="blog" sx={{ 
+            py: 8, 
+            backgroundColor: isDarkMode ? '#121212' : '#ffffff' 
+        }}>
             <Container>
                 <Typography variant="h3" align="center" gutterBottom>
                     Latest Blog Posts

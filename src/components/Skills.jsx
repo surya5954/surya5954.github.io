@@ -9,6 +9,7 @@ import {
     CardContent
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { useThemeMode } from '../contexts/ThemeContext';
 import { skillData } from '../data/portfolioData';
 
 const SkillCard = styled(Card)(({ theme }) => ({
@@ -30,8 +31,13 @@ const SkillProgress = styled(LinearProgress)(({ theme }) => ({
 }));
 
 const Skills = () => {
+    const { isDarkMode } = useThemeMode();
+    
     return (
-        <Box id="skills" sx={{ py: 8, backgroundColor: '#f8f9fa' }}>
+        <Box id="skills" sx={{ 
+            py: 8, 
+            backgroundColor: isDarkMode ? '#1a1a1a' : '#f8f9fa' 
+        }}>
             <Container>
                 <Typography variant="h3" align="center" gutterBottom>
                     Technical Skills
@@ -83,7 +89,8 @@ const Skills = () => {
                                 <Box
                                     sx={{
                                         p: 2,
-                                        backgroundColor: 'white',
+                                        backgroundColor: isDarkMode ? '#2a2a2a' : 'white',
+                                        color: isDarkMode ? 'white' : 'inherit',
                                         borderRadius: 2,
                                         boxShadow: 1,
                                         transition: 'all 0.3s ease',
