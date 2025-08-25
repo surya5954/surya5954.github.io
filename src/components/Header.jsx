@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
     AppBar, 
     Toolbar, 
@@ -11,6 +11,7 @@ import {
 import { styled } from '@mui/material/styles';
 import ThemeToggle from './ThemeToggle';
 import { data, greetings } from '../data/portfolioData';
+import profileImage from '../assets/images/newProfilePicNoBG.png';
 
 const HeroSection = styled(Box)(({ theme }) => ({
     background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
@@ -24,11 +25,17 @@ const HeroSection = styled(Box)(({ theme }) => ({
 }));
 
 const Header = () => {
+    const [imageError, setImageError] = useState(false);
+    
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
+    };
+    
+    const handleImageError = () => {
+        setImageError(true);
     };
 
     return (
@@ -62,17 +69,42 @@ const Header = () => {
             
             <HeroSection>
                 <Container>
-                    <Avatar
-                        sx={{ 
-                            width: 120, 
-                            height: 120, 
-                            margin: '0 auto 2rem',
-                            backgroundColor: '#ffffff20',
-                            fontSize: '3rem'
-                        }}
-                    >
-                        {data.userData.name.split(' ').map(n => n[0]).join('')}
-                    </Avatar>
+                    {!imageError ? (
+                        <Avatar
+                            src={profileImage}
+                            alt={data.userData.name}
+                            onError={handleImageError}
+                            sx={{ 
+                                width: 150, 
+                                height: 150, 
+                                margin: '0 auto 2rem',
+                                border: '4px solid rgba(255,255,255,0.3)',
+                                boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+                                transition: 'transform 0.3s ease-in-out',
+                                '&:hover': {
+                                    transform: 'scale(1.05)'
+                                }
+                            }}
+                        />
+                    ) : (
+                        <Avatar
+                            sx={{ 
+                                width: 150, 
+                                height: 150, 
+                                margin: '0 auto 2rem',
+                                backgroundColor: '#ffffff20',
+                                fontSize: '3rem',
+                                border: '4px solid rgba(255,255,255,0.3)',
+                                boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+                                transition: 'transform 0.3s ease-in-out',
+                                '&:hover': {
+                                    transform: 'scale(1.05)'
+                                }
+                            }}
+                        >
+                            {data.userData.name.split(' ').map(n => n[0]).join('')}
+                        </Avatar>
+                    )}
                     <Typography variant="h2" gutterBottom>
                         {greetings}! I'm {data.userData.name}
                     </Typography>
