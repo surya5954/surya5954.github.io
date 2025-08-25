@@ -1,45 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ce6a776.chunk.css",
-    "main.js": "/static/js/main.4e707bfb.chunk.js",
-    "main.js.map": "/static/js/main.4e707bfb.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e8722d78.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e8722d78.js.map",
-    "static/css/2.ed1298f3.chunk.css": "/static/css/2.ed1298f3.chunk.css",
-    "static/js/2.a53ff7eb.chunk.js": "/static/js/2.a53ff7eb.chunk.js",
-    "static/js/2.a53ff7eb.chunk.js.map": "/static/js/2.a53ff7eb.chunk.js.map",
-    "static/js/3.67202af9.chunk.js": "/static/js/3.67202af9.chunk.js",
-    "static/js/3.67202af9.chunk.js.map": "/static/js/3.67202af9.chunk.js.map",
+    "main.css": "/static/css/main.d0210d37.css",
+    "main.js": "/static/js/main.03a8073b.js",
+    "static/js/453.a5b25d5b.chunk.js": "/static/js/453.a5b25d5b.chunk.js",
     "index.html": "/index.html",
-    "static/css/2.ed1298f3.chunk.css.map": "/static/css/2.ed1298f3.chunk.css.map",
-    "static/css/main.3ce6a776.chunk.css.map": "/static/css/main.3ce6a776.chunk.css.map",
-    "static/js/2.a53ff7eb.chunk.js.LICENSE.txt": "/static/js/2.a53ff7eb.chunk.js.LICENSE.txt",
-    "static/media/AECAgra.b663baa3.webp": "/static/media/AECAgra.b663baa3.webp",
-    "static/media/AECAgraFull.84cbc1d7.webp": "/static/media/AECAgraFull.84cbc1d7.webp",
-    "static/media/AzureAuthFlow.4e9f3ec3.gif": "/static/media/AzureAuthFlow.4e9f3ec3.gif",
-    "static/media/Bayer.589ad261.jpeg": "/static/media/Bayer.589ad261.jpeg",
-    "static/media/CssLogo.f889f0d8.webp": "/static/media/CssLogo.f889f0d8.webp",
-    "static/media/FacebookAuthFlow.23621e1d.gif": "/static/media/FacebookAuthFlow.23621e1d.gif",
-    "static/media/GoogleAuthFlow.234738d6.gif": "/static/media/GoogleAuthFlow.234738d6.gif",
-    "static/media/KeycloakAuthFlow.94acc731.gif": "/static/media/KeycloakAuthFlow.94acc731.gif",
-    "static/media/cdac.1055aff8.jpeg": "/static/media/cdac.1055aff8.jpeg",
-    "static/media/cdacLogo.54874b0c.jpg": "/static/media/cdacLogo.54874b0c.jpg",
-    "static/media/hclConnectionsLogo.77662a8e.png": "/static/media/hclConnectionsLogo.77662a8e.png",
-    "static/media/htmlLogo.f61e377f.png": "/static/media/htmlLogo.f61e377f.png",
-    "static/media/js.81cb0fac.png": "/static/media/js.81cb0fac.png",
-    "static/media/jwtIcon.46f766eb.jpg": "/static/media/jwtIcon.46f766eb.jpg",
-    "static/media/newProfilePicNoBG.52fa2624.png": "/static/media/newProfilePicNoBG.52fa2624.png",
-    "static/media/node-js-icon.ac96a6c9.png": "/static/media/node-js-icon.ac96a6c9.png",
-    "static/media/oauthLogo.20863ba1.jpg": "/static/media/oauthLogo.20863ba1.jpg",
-    "static/media/profilePic.299c667a.jpg": "/static/media/profilePic.299c667a.jpg",
-    "static/media/reactIcon.20ec11c4.png": "/static/media/reactIcon.20ec11c4.png",
-    "static/media/upBoard.46c3eec1.png": "/static/media/upBoard.46c3eec1.png"
+    "main.d0210d37.css.map": "/static/css/main.d0210d37.css.map",
+    "main.03a8073b.js.map": "/static/js/main.03a8073b.js.map",
+    "453.a5b25d5b.chunk.js.map": "/static/js/453.a5b25d5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.e8722d78.js",
-    "static/css/2.ed1298f3.chunk.css",
-    "static/js/2.a53ff7eb.chunk.js",
-    "static/css/main.3ce6a776.chunk.css",
-    "static/js/main.4e707bfb.chunk.js"
+    "static/css/main.d0210d37.css",
+    "static/js/main.03a8073b.js"
   ]
 }
