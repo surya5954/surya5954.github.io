@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway');
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont,'acme', 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -12,28 +10,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-/* Light theme (default) */
-body, body[data-theme='light'] {
-  --background-color: #DECBA4;
-  --text-color: #333333;
-  --primary-color: #61dafb;
-  --header-background-color: #282c34;
-  --header-text-color: white;
-
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-/* Dark theme */
-body[data-theme='dark'] {
-  --background-color: #121212;
-  --text-color: #FFFFFF;
-  --primary-color: #BB86FC; /* A common purple for dark mode accents */
-  --header-background-color: #1E1E1E; /* Slightly lighter than main dark background */
-  --header-text-color: #FFFFFF;
-
-  background-color: var(--background-color);
-  color: var(--text-color);
 }
